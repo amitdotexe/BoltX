@@ -2,12 +2,12 @@
   "name": "boltx",
   "displayName": "BoltX",
   "description": "AI-powered project scaffolding with diff review",
+  "publisher": "amitmallick837",
   "version": "1.0.0",
-  "publisher": "amit-mallick",
   "icon": "images/icon.png",
   "repository": {
     "type": "git",
-    "url": "https://github.com/amitdotexe/boltx"
+    "url": "https://github.com/amitdotexe/BoltX"
   },
   "engines": {
     "vscode": "^1.80.0"
