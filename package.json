@@ -3,7 +3,7 @@
   "displayName": "BoltX",
   "description": "AI-powered project scaffolding with diff review",
   "publisher": "amitmallick837",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "icon": "images/icon.png",
   "repository": {
     "type": "git",
