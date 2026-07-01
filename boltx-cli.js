@@ -235,7 +235,11 @@ async function main() {
   }
 
   console.log("");
-  console.log(c("yellow", c("bold", "⚡ boltx")) + "  " + c("dim", "v1.0.0"));
+  console.log(
+    c("yellow", c("bold", "⚡ boltx")) +
+      "  " +
+      c("dim", `v${require("./package.json").version}`),
+  );
   printSep();
   console.log("");
   console.log(c("bold", "what do you want to do?"));
