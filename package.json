@@ -1,0 +1,38 @@
+{
+  "name": "boltx",
+  "displayName": "BoltX",
+  "description": "AI-powered project scaffolding with diff review",
+  "version": "1.0.0",
+  "publisher": "amit-mallick",
+  "icon": "images/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amitdotexe/boltx"
+  },
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "bin": {
+    "boltx": "./boltx-cli.js"
+  },
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "boltx.run",
+        "title": "BoltX: Run"
+      },
+      {
+        "command": "boltx.setApiKey",
+        "title": "BoltX: Set API Key"
+      },
+      {
+        "command": "boltx.setProvider",
+        "title": "BoltX: Set AI Provider"
+      }
+    ]
+  }
+}
