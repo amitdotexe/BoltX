@@ -17,8 +17,8 @@ function readSession() {
   if (!fs.existsSync(SESSION_PATH)) return null;
   try {
     return JSON.parse(fs.readFileSync(SESSION_PATH, "utf8"));
-  } catch {
-    return null;
+  } catch (e) {
+    console.error("[BoltX] session parse failed:", e.message);
   }
 }
 
@@ -43,7 +43,7 @@ function ensureGlobalCli(context) {
     execSync(checkCmd, { stdio: "ignore" });
     return; // already installed
   } catch {
-    // not installed yet — set it up
+    console.log("[BoltX] boltx not found, reinstalling from extension bundle");
   }
 
   try {
